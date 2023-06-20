@@ -1,25 +1,32 @@
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+}
 .card {
-  background-color: #f2f2f2;
-  border-radius: 8px;
+  /* Adjust the width and margins as needed */
+  height: 200px; /* Set the same value as the height in the card CSS */
+  background-color: #2eaa92;
+  border-radius: 24px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .card-description {
-  font-size: 14px;
-  color: #666;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .card-value {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #333;
 }

@@ -4,7 +4,10 @@ import "./card.css";
 const Card = ({ data }) => {
   console.log(data);
   return (
-    <div className="card">
+    <div
+      className="card"
+      style={{ backgroundColor: data.color, color: data.backgroundColor }}
+    >
       <h3 className="card-title">{data?.title}</h3>
       <p className="card-description">{data?.description}</p>
       <p className="card-value">{data?.value}</p>
